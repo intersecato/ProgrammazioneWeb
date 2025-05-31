@@ -1,0 +1,48 @@
+/* ===========================================
+   PAGINAZIONE
+   =========================================== */
+
+/* PAGINATION BASE */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: var(--main-blue);
+  color: var(--white);
+}
+
+/* DATATABLES PAGINATION */
+.dataTables_paginate {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dataTables_paginate .paginate_button {
+  color: #007bff !important;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+  color: var(--dark-gray);
+  border: none;
+  margin: 0 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button:hover {
+  background-color: var(--main-blue);
+  color: var(--white) !important;
+}

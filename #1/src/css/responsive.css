@@ -1,0 +1,47 @@
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 600px) {
+  /* Welcome section */
+  .welcome-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .welcome-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-content p {
+    font-size: 1rem;
+  }
+
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.3rem 0;
+  }
+
+  /* DataTables */
+  .dataTables_length,
+  .dataTables_filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  /* Controls */
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .controls input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sale - Gestione Cinema</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Sistema Gestione Cinema</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="sale.html" class="active">Sale</a></li>
+      <li><a href="proiezioni.html">Proiezioni</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="film-management">
+      <h2>🍿 Gestione Sale</h2>
+      <table id="filmTable" class="display">
+        <thead>
+          <tr>
+            <th>Codice</th>
+            <th>Capienza</th>
+            <th>Tipo</th>
+            <th>Proiezioni</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Sistema Gestione Cinema - Progetto Programmazione Web</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="../js/sale.js"></script>
+
+</body>
+</html>

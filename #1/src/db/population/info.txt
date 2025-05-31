@@ -1,0 +1,42 @@
+GENERAZIONE DEI FILM
+- Quantità: 300 film
+- Titolo: finto o reale
+- Anno: compreso tra 2000 e 2025
+- Durata: tra 75 e 180 minuti
+- Lingua: scegli da una lista fissa (es: 'Italiano', 'Inglese', 'Francese', 'Tedesco')
+
+
+GENERAZIONE DELLE SALE
+- Quantità: da 4 a 15 sale
+- Numero di posti: tra 50 e 400
+- Numero file: da 5 a 30
+- Numero posti per fila: ⌊numPosti / numFile⌋
+- Dimensione schermo: da 100 a 400 pollici
+- Tipo: '3-D' o 'tradizionale', a caso
+
+
+SCELTA DEI FILM PROIETTATI
+- Seleziona l’80% dei film → 240 film
+- Periodo coperto: da gennaio 2021 a dicembre 2025
+
+
+GENERAZIONE DELLE PROIEZIONI
+Per ogni film selezionato:
+- Selezionare una data di prima proiezione casuale nel periodo
+- Generare un numero di giorni di programmazione secondo una gaussiana (es: μ = 7, σ = 3, con min = 1 e max = 21 giorni)
+Per ogni giorno:
+- Generare da 1 a 5 orari casuali tra le 10:00 e le 24:00 (slot orari ogni 30 min o 1h)
+- Scegliere una sala a caso
+- Verifica che non ci sia sovrapposizione (stessa sala, stessa data, stesso orario)
+- Crea una nuova riga in Proiezione
+
+
+GENERAZIONE DEI BIGLIETTI
+Per ogni proiezione:
+- Calcolare un numero di biglietti venduti secondo una gaussiana:
+    Media: 60% della capienza della sala
+    Deviazione: 15%
+Per ciascun biglietto:
+- Generare un numero di fila e numero di posto (controllare che non sia già occupato)
+- Data vendita: un giorno tra la data della proiezione -15 e il giorno stesso
+- Prezzo: tra 5€ e 14€, magari più alto per le sale 3-D
