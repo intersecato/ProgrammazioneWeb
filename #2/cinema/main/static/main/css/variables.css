@@ -1,0 +1,23 @@
+/* ===========================================
+   VARIABILI CSS
+   =========================================== */
+
+:root {
+  /* Colori principali */
+  --main-blue: #1f4e79;
+  --main-blue-dark: #153a5b;
+  --accent: #00b4d8;
+  --light-blue: #d0e9f7;
+  
+  /* Colori di base */
+  --white: #ffffff;
+  --gray: #f8f9fa;
+  --dark-gray: #222;
+  
+  /* Sfondi */
+  --background: linear-gradient(135deg, #f0f4f8, #e2ecf5);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  
+  /* Effetti */
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}

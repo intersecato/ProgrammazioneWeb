@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Film - Gestione Cinema{% endblock %}
+
+{% block content %}
+<main>
+  <section class="film-management">
+    <h2>🎬 Gestione Film</h2>
+    <div class="controls">
+      <button id="addFilmBtn" class="primary">➕ Aggiungi Film</button>
+    </div>
+
+    <table id="filmTable" class="display">
+      <thead>
+        <tr>
+          <th>Titolo</th>
+          <th>Anno</th>
+          <th>Durata</th>
+          <th>Lingua</th>
+          <th>Proiezioni</th>
+          <th>Vendite</th>
+          <th>Azioni</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<div id="filmModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <form id="filmForm">
+      <input type="hidden" name="codice" />
+      <label for="titolo">Titolo</label>
+      <input type="text" name="titolo" id="titolo" placeholder="Inserisci il titolo" required />
+      <label for="anno">Anno</label>
+      <input type="number" name="anno" id="anno" placeholder="Inserisci l'anno" required />
+      <label for="durata">Durata (minuti)</label>
+      <input type="number" name="durata" id="durata" placeholder="Inserisci la durata" required />
+      <label for="lingua">Lingua</label>
+      <select name="lingua" id="lingua" required>
+        <option value="Italiano">Italiano</option>
+        <option value="Inglese">Inglese</option>
+        <option value="Francese">Francese</option>
+        <option value="Tedesco">Tedesco</option>
+        <option value="Spagnolo">Spagnolo</option>
+      </select>
+      <button type="submit" class="primary">Salva</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="{% static 'main/js/film.js' %}"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+{% endblock %}
