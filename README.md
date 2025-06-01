@@ -1,20 +1,41 @@
-# Web Programming Project – Base Structure
+# 🌐 Web Programming Projects – Course Portfolio
 
-This repository contains the foundational codebase for web development projects created during the Web Programming course. It is designed to provide a consistent and extensible starting point for PHP-based applications with dynamic frontends and database interaction.
+This repository contains two foundational web development projects created during the **Web Programming** course. Each project represents a different approach to building web applications: the first using **vanilla PHP**, and the second using the **Django** web framework (Python-based).
 
-## Overview
+---
 
-The project integrates HTML, CSS, JavaScript, and PHP to deliver dynamic and responsive web applications. The structure is intentionally modular, promoting separation of concerns and ease of maintenance across subprojects.
+## 📁 Project 1 – PHP Vanilla Base Structure
 
-AJAX is used to enable asynchronous communication between the frontend and backend, improving interactivity without requiring full page reloads. Reusable JavaScript utility functions are provided to simplify common tasks such as form submission, modal management, and error handling.
+This is the original version of the web application, built entirely with **HTML**, **CSS**, **JavaScript**, and **vanilla PHP** (i.e., no frameworks). It showcases fundamental concepts of server-side programming and dynamic page updates through AJAX.
 
-Toast notifications offer immediate user feedback, and the use of **DataTables** ensures advanced features for table rendering, including search, pagination, and sorting.
+### ✅ Key Features
 
-## Technologies
+- Clean and modular structure for maintainability  
+- **AJAX** support for dynamic frontend/backend interaction  
+- **Toast notifications** for real-time user feedback  
+- **DataTables** for enhanced table rendering (search, sort, pagination)  
+- Reusable **JavaScript utilities** for modals, forms, and error handling  
+- **MySQL / MariaDB** database integration
 
-- HTML5, CSS3, JavaScript  
-- PHP (vanilla)  
-- AJAX for async operations  
-- Toast notifications  
-- DataTables for enhanced data presentation  
-- MySQL (or compatible) as database
+---
+
+## 🐍 Project 2 – Django Reimplementation
+
+This project is a full **rewrite** of the original PHP version using the **Django** framework. It preserves the core logic and frontend behavior but adopts modern best practices in Python-based web development.
+
+### ✅ Key Changes
+
+- **Backend rewritten from scratch** using Django  
+- Database interaction managed via **Django ORM**  
+- Templates, views, and static files refactored to fit Django conventions  
+- Legacy **JavaScript reused**, but much of the old CSS has been replaced with **Bootstrap**  
+- Improved project scalability and maintainability
+
+---
+
+## ⚙️ Database
+
+Both projects use **MySQL / MariaDB** as the default database. The Django version includes a full database **dump** in the project folder for testing or restoration.
+
+If preferred, the Django project can be easily configured to use **SQLite** by modifying the database settings in:
+
