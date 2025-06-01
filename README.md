@@ -1,4 +1,4 @@
-# 🌐 Web Programming Projects – Course Portfolio
+# 🌐 Web Programming Projects
 
 This repository contains two foundational web development projects created during the **Web Programming** course. Each project represents a different approach to building web applications: the first using **vanilla PHP**, and the second using the **Django** web framework (Python-based).
 
